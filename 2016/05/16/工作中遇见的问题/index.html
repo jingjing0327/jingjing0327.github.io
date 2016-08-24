@@ -88,7 +88,7 @@
 <meta property="og:site_name" content="李琼写文章的地方">
 <meta property="og:description" content="1、Android EditText 正常的hine和password的hine 字体是不一样的，去年的时候没有解决这个问题，今年突然发现了解决方法。1EditText.setTransformationMethod(new PasswordTransformationMethod());
 在xml中不用设置android:password=”true” 用代码控制即可。2、05-31 15:21">
-<meta property="og:updated_time" content="2016-05-31T07:35:58.000Z">
+<meta property="og:updated_time" content="2016-08-24T03:31:31.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="工作中遇见的问题">
 <meta name="twitter:description" content="1、Android EditText 正常的hine和password的hine 字体是不一样的，去年的时候没有解决这个问题，今年突然发现了解决方法。1EditText.setTransformationMethod(new PasswordTransformationMethod());
@@ -289,6 +289,7 @@
       
         <p>1、Android EditText 正常的hine和password的hine 字体是不一样的，去年的时候没有解决这个问题，今年突然发现了解决方法。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">EditText.setTransformationMethod(<span class="keyword">new</span> PasswordTransformationMethod());</span><br></pre></td></tr></table></figure></p>
 <p>在xml中不用设置android:password=”true” 用代码控制即可。<br>2、05-31 15:21:38.165: E/AndroidRuntime(13572): java.lang.IllegalStateException: You need to use a Theme.AppCompat theme (or descendant) with this activity.<br>经常性的遇见这个问题，解决方法就是在AndroidManifest.xml里面把Activity的theme改成<br>android:theme=”@style/Theme.AppCompat.Light.NoActionBar”  原因未知，需记录。</p>
+<p>v7.AlertDialog<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">name</span>=<span class="string">"AlertDialog"</span> <span class="attr">parent</span>=<span class="string">"Theme.AppCompat.Light.Dialog.Alert"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 
       
     </div>
