@@ -100,7 +100,7 @@
 指向指针的指针
 泛型指针与类型转换
 函数指针">
-<meta property="og:updated_time" content="2016-08-24T12:03:03.000Z">
+<meta property="og:updated_time" content="2016-08-31T03:58:39.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="《算法精解》这本书">
 <meta name="twitter:description" content="一、简介  略
@@ -345,7 +345,31 @@
 <li>队列：先进先出（FIFO）排队</li>
 </ul>
 <h3 id="七、集合"><a href="#七、集合" class="headerlink" title="七、集合"></a>七、集合</h3><h3 id="八、哈希表"><a href="#八、哈希表" class="headerlink" title="八、哈希表"></a>八、哈希表</h3><ul>
-<li>哈希表支持一种最有效的检索方法：散列。从根本上来说，一个哈希表包含一个数组，通过特殊的索引值（键）来访问数组中的元素。哈希表的主要思想是通过一个哈希函数，在所有可能的键与槽位之间建立一张映射表。哈希函数每次接受一个键将返回与键相对应的哈希编码或哈希值。键的数据类型可能多种多样，但哈希值的类型只能是整型。</li>
+<li>哈希表支持一种最有效的检索方法：散列。从根本上来说，一个哈希表包含一个数组，通过特殊的索引值（键）来访问数组中的元素。哈希表的主要思想是通过一个哈希函数，在所有可能的键与槽位之间建立一张映射表。哈希函数每次接受一个键将返回与键相对应的哈希编码或哈希值。键的数据类型可能多种多样，但哈希值的类型只能是整型。<h3 id="九、树"><a href="#九、树" class="headerlink" title="九、树"></a>九、树</h3></li>
+<li>树由称为节点的元素按照层次结构的方式组织而成。层次结构最顶端的结点为根。与根结点直接相连的结点称为根的子结点，通常子结点本身也有属于它们自己的子结点。除了根结点外，在这个层次体系中的每个结点都有唯一的父结点，也就是与其直接相连的上级结点。一个结点拥有多个子结点取决于树的类型，这个量值称为树的分支因子，它决定了当插入结点时树的分支扩展的速度。<ul>
+<li>二叉树</li>
+<li>树的周游算法</li>
+<li>树的平衡</li>
+<li>二叉搜索树</li>
+<li>树的旋转<h3 id="十、堆和优先队列"><a href="#十、堆和优先队列" class="headerlink" title="十、堆和优先队列"></a>十、堆和优先队列</h3></li>
+</ul>
+</li>
+<li>堆：它是一种树形组织，使我们能够迅速确定包含最大值的结点。维持一棵树的代价低于维持一个有序数据集的代价。同样，我们可以通过堆快速地找到包含最小值的元素。<ul>
+<li>堆是一颗二叉树，通常其子结点存储的值比父结点的值小。所以，根结点是树中最大的结点。同样，我们也可以让堆向另一种方向发展，即每个子结点存储的值比父结点的值大。这样根结点就是树中最小的结点。这样的二叉树是局部有序的，任何一个结点与其兄弟结点之间都没有必然的顺序关系，但它与其父子结点有大小顺序关系。子结点比父结点小的堆称为最大值堆，这是因为根结点存储该树所有结点的最大值。反之亦然，子结点比父结点大的堆称为最小值堆。</li>
+</ul>
+</li>
+<li>优先队列：他是一个从堆自然衍生而来的数据结构。在优先队列中，数据保存在一个堆中，这样我们能够迅速确定下一个最高优先级的结点。所谓元素的“优先级”在不同的问题中意义也不相同。</li>
+<li>应用<ul>
+<li>排序<ul>
+<li>具体来说，就是指堆排序。在堆排序中，要排序的数据首先存储在一个堆中。从堆中一次取出一个结点，放置到有序数据集的尾部。</li>
+</ul>
+</li>
+<li>任务调度</li>
+<li>包囊分拣</li>
+<li>霍夫曼编码</li>
+<li>负载均衡</li>
+</ul>
+</li>
 </ul>
 
       
@@ -531,7 +555,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、简介"><span class="nav-number">1.</span> <span class="nav-text">一、简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、指针操作"><span class="nav-number">2.</span> <span class="nav-text">二、指针操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三、递归"><span class="nav-number">3.</span> <span class="nav-text">三、递归</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#四、算法分析"><span class="nav-number">4.</span> <span class="nav-text">四、算法分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#五、链表"><span class="nav-number">5.</span> <span class="nav-text">五、链表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#六、栈和队列"><span class="nav-number">6.</span> <span class="nav-text">六、栈和队列</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#七、集合"><span class="nav-number">7.</span> <span class="nav-text">七、集合</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#八、哈希表"><span class="nav-number">8.</span> <span class="nav-text">八、哈希表</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、简介"><span class="nav-number">1.</span> <span class="nav-text">一、简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、指针操作"><span class="nav-number">2.</span> <span class="nav-text">二、指针操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三、递归"><span class="nav-number">3.</span> <span class="nav-text">三、递归</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#四、算法分析"><span class="nav-number">4.</span> <span class="nav-text">四、算法分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#五、链表"><span class="nav-number">5.</span> <span class="nav-text">五、链表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#六、栈和队列"><span class="nav-number">6.</span> <span class="nav-text">六、栈和队列</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#七、集合"><span class="nav-number">7.</span> <span class="nav-text">七、集合</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#八、哈希表"><span class="nav-number">8.</span> <span class="nav-text">八、哈希表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#九、树"><span class="nav-number">9.</span> <span class="nav-text">九、树</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#十、堆和优先队列"><span class="nav-number">10.</span> <span class="nav-text">十、堆和优先队列</span></a></li></ol></div>
             
           </div>
         </section>
