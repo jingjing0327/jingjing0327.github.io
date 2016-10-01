@@ -239,6 +239,107 @@
             
               
                 
+                <a class="post-title-link" href="/2016/10/01/日志/" itemprop="url">
+                  日志
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-10-01T18:32:57+08:00" content="2016-10-01">
+              2016-10-01
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/10/01/日志/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/01/日志/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>2016-10-01 18:25<br>  嚯嚯嚯，我用python把某某网站的视频爬下来了。出现了一个问题，我用的windows10，python3.5 写的脚本，在装mysqldb的时候，错误❌提示说确实什么鬼vs.bat   Google了一把，需要装vs。。。<br>  心真累。。<br>  然后我就想用mac实现吧，我它喵的用Linux行了吧。<br>  然而，mac是python2.7 。。。xcode编译项目的时候需要用。。。<br>  如果我升级了python到3.5   xcode编译项目肯定过不去。。。<br>  后来后来。。<br>  我把sql直接生成出来了，嚯嚯嚯，生成insert into 插入sql，直接在navicat运行，嚯嚯嚯。<br>  机智如我。</p>
+
+          
+        
+      
+    </div>
+    
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/09/08/杂项/" itemprop="url">
                   杂项
                 </a>
@@ -306,6 +407,7 @@
 <p>2016-09-25 11:03  Android 权限问题<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.example.uitest;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MainActivity</span> <span class="keyword">extends</span> <span class="title">AppCompatActivity</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> CardView cardView = <span class="keyword">null</span>;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> MY_PERMISSIONS_REQUEST_CAMERA = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.onCreate(savedInstanceState);</span><br><span class="line">        setContentView(R.layout.activity_main);</span><br><span class="line">        cardView = (CardView) findViewById(R.id.cardlist_item);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">startOtherActivity</span><span class="params">(View view)</span> </span>&#123;</span><br><span class="line"><span class="comment">//        Intent mIntent = new Intent(this, OtherActivity.class);</span></span><br><span class="line"><span class="comment">//        startActivity(mIntent, ActivityOptions.makeSceneTransitionAnimation(this, cardView, cardView.getTransitionName()).toBundle());</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (ContextCompat.checkSelfPermission(<span class="keyword">this</span>, Manifest.permission.CAMERA)</span><br><span class="line">                != PackageManager.PERMISSION_GRANTED) &#123;</span><br><span class="line">            <span class="keyword">if</span>(ActivityCompat.shouldShowRequestPermissionRationale(<span class="keyword">this</span>,Manifest.permission.CAMERA))&#123;</span><br><span class="line"></span><br><span class="line">                ActivityCompat.requestPermissions(<span class="keyword">this</span>, <span class="keyword">new</span> String[]&#123;Manifest.permission.CAMERA&#125;, MY_PERMISSIONS_REQUEST_CAMERA);</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                ActivityCompat.requestPermissions(<span class="keyword">this</span>, <span class="keyword">new</span> String[]&#123;Manifest.permission.CAMERA&#125;, MY_PERMISSIONS_REQUEST_CAMERA);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            Toast.makeText(<span class="keyword">this</span>, <span class="string">"!!!!!!WWWWWWWWWWWWW"</span>, Toast.LENGTH_SHORT).show();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onRequestPermissionsResult</span><span class="params">(<span class="keyword">int</span> requestCode, @NonNull String[] permissions, @NonNull <span class="keyword">int</span>[] grantResults)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (requestCode == MY_PERMISSIONS_REQUEST_CAMERA) &#123;</span><br><span class="line">            <span class="keyword">if</span> (grantResults[<span class="number">0</span>] == PackageManager.PERMISSION_GRANTED) &#123;</span><br><span class="line">                Toast.makeText(<span class="keyword">this</span>, <span class="string">"permission OK!"</span>, Toast.LENGTH_SHORT).show();</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                Toast.makeText(<span class="keyword">this</span>, <span class="string">"permission Denied"</span>, Toast.LENGTH_SHORT).show();</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">super</span>.onRequestPermissionsResult(requestCode, permissions, grantResults);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>([0-9]*)<br>[0-9]{6}</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/python</span></span><br><span class="line"><span class="comment"># -*- coding: UTF-8 -*-</span></span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">match0</span><span class="params">(text, *patterns)</span>:</span></span><br><span class="line">    <span class="string">"""Scans through a string for substrings matched some patterns (first-subgroups only).</span><br><span class="line"></span><br><span class="line">    Args:</span><br><span class="line">        text: A string to be scanned.</span><br><span class="line">        patterns: Arbitrary number of regex patterns.</span><br><span class="line"></span><br><span class="line">    Returns:</span><br><span class="line">        When matches, returns first-subgroups from first match.</span><br><span class="line">        When no matches, return None</span><br><span class="line">    """</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> pattern <span class="keyword">in</span> patterns:</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            match = re.search(pattern, text)</span><br><span class="line">            print(match)</span><br><span class="line">        <span class="keyword">except</span>(TypeError):</span><br><span class="line">            match = re.search(pattern, str(text))</span><br><span class="line">        <span class="keyword">if</span> match:</span><br><span class="line">            <span class="keyword">return</span> match.group(<span class="number">1</span>)   //<span class="keyword">if</span> match.group(<span class="number">0</span>)=&gt; id=<span class="number">76439873</span></span><br><span class="line">                                    //<span class="keyword">if</span> match.group(<span class="number">1</span>)=&gt; <span class="number">76439873</span></span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">None</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    xx=match0(<span class="string">'http://www.acfun.tv/v/ac3142323?id=76439873'</span>,<span class="string">r'id=([0-9]*)'</span>)</span><br><span class="line">    print(xx)</span><br></pre></td></tr></table></figure>
+<p>2016-10-01 18:25<br>  嚯嚯嚯，我用python把某某网站的视频爬下来了。出现了一个问题，我用的windows10，python3.5 写的脚本，在装mysqldb的时候，错误❌提示说确实什么鬼vs.bat   Google了一把，需要装vs。。。<br>  心真累。。<br>  然后我就想用mac实现，我它喵的用Linux行了吧。<br>  然而，mac是python2.7 。。。xcode编译项目的时候需要用。。。<br>  如果我升级了python到3.5   xcode编译项目肯定过不去。。。<br>  后来后来。。<br>  我把sql直接生成出来了，嚯嚯嚯，生成insert into 插入sql，直接在navicat运行，嚯嚯嚯。<br>  机智如我。</p>
 
           
         
@@ -1181,107 +1283,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/04/25/今日总结-1/" itemprop="url">
-                  今日总结
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-04-25T20:13:13+08:00" content="2016-04-25">
-              2016-04-25
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/04/25/今日总结-1/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/25/今日总结-1/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>今天身体有点难受，胃感觉不是特别的好，感觉不出来饿，巨难受。<br>今天主要做的是 RecyclerView 加 Head view<br>功能还没有封装，等封装好了之后，就把代码贴上来。</p>
-
-          
-        
-      
-    </div>
-    
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1327,7 +1328,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">18</span>
+              <span class="site-state-item-count">19</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1337,7 +1338,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">16</span>
+                <span class="site-state-item-count">17</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
